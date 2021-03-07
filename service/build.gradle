@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'com.boot.skeleton'
+version '1.0.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':domain')
+    compile project(':repository')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+/*
+The bootJar task tries to create an executable jar, and that requires a main() method. 
+As a result, you need to disable the bootJar task and enable the jar task 
+(which creates an ordinary jar rather than an executable jar).
+ */
+jar{
+    enabled = true
+}
+
+bootJar{
+    enabled = false
+}

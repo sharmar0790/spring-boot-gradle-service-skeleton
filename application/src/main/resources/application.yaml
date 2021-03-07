@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-redis
+
+server:
+  port: 8080
+
+#URL to see the swagger/open API 3.0 in motion use http://localhost:8080/swagger-ui.html
+springdoc:
+  api-docs:
+    path: /api-docs
+
+
+

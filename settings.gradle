@@ -1,0 +1,8 @@
+rootProject.name = 'spring-boot-gradle-service-skeleton'
+include 'repository'
+include 'service'
+include 'controller'
+include 'common'
+include 'domain'
+include 'application'
+

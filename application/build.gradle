@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.boot.skeleton'
+version '1.0.0-SNAPSHOT'
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springdoc:springdoc-openapi-ui:1.2.32'
+
+
+    implementation project(':common')
+    implementation project(':controller')
+    implementation project(':service')
+    implementation project(':domain')
+    implementation project(':repository')
+}
